@@ -1,0 +1,18 @@
+print ('Ingresa el salario para calcular el incremento')
+salario= int(input())
+
+#Incrementos
+veintep=salario*0.20
+quincep=salario*0.15
+
+if salario<=15000:
+    salario_incremento= salario+(salario*0.20)
+else:
+    salario_incremento= salario+(salario*0.15)
+
+if salario<=15000:
+    print('El incremento es del 20%: ', veintep)
+else:
+    print('El incremento es del 15%: ', quincep)
+	
+print ('El nuevo salario con incremento es de: ', salario_incremento)
