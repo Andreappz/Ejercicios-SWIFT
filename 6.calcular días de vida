@@ -1,0 +1,22 @@
+import datetime
+print ("Ingresa la fecha de nacimiento para calcular los días de vida")
+dia = int(input("Día de nacimiento: "))
+mes = int(input("Mes de nacimiento: "))
+anio = int(input("Año de nacimiento: "))
+
+# objeto datetime: horas, minutos y segundos en 0
+fecha_de_nacimiento = datetime.datetime(anio, mes, dia)
+# fecha y hora de hoy
+fecha_de_hoy = datetime.datetime.now()
+
+diferencia = fecha_de_hoy - fecha_de_nacimiento
+
+dias_vividos = diferencia.days
+segundos_vividos = diferencia.seconds
+horas_vividas, segundos_vividos = divmod(segundos_vividos, 3600)
+minutos_vividos, segundos_vividos = divmod(segundos_vividos, 60)
+
+mensaje = "Has vivido {} día(s), {} hora(s), {} minuto(s) y {} segundo(s)".format(
+    dias_vividos, horas_vividas, minutos_vividos, segundos_vividos)
+
+print(mensaje)
