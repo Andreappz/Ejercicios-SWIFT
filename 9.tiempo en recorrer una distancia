@@ -1,0 +1,8 @@
+print ("Ingresa los siguientes datos para calcular el tiempo en recorrer la distancia")
+print ("Ingresa distancia en km:")
+dist= float (input())
+print ("Ingresa velocidad en km/h:")
+vel= float (input())
+
+tiempo= dist/vel
+print ("El tiempo en recorrer la distancia es de: ",tiempo, "h")
