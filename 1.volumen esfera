@@ -1,0 +1,8 @@
+print ("Escriba el radio de la esfera para calcular el volumen")
+#V = 4/3 π r³
+radio=float(input ("radio: "))
+
+pi =3.1416
+volumen = 4/3 *pi* (radio **3)
+
+print ("El volumen de las esfera es:", volumen)
