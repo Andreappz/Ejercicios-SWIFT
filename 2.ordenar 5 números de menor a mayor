@@ -1,0 +1,16 @@
+print("Escribe 5 cifras")
+
+a = int(input("Ingresa el primer número: "))
+b = int(input("Ingresa el segundo número: "))
+c = int(input("Ingresa el tercer número: "))
+d = int(input("Ingresa el cuarto número: "))
+e = int(input("Ingresa el quinto número: "))
+
+lista = [a, b, c, d, e]
+
+# lista NO ordenada
+print("Los números son: ", lista)
+
+lista.sort()
+
+print("Los números ordenados de menor a mayor son: ", lista)
