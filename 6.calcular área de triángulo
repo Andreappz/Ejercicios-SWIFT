@@ -1,0 +1,8 @@
+print ('Escribe los siguientes datos para calcular el área del triángulo')
+print ('Base:')
+base= float (input())
+print('Altura:')
+altura= float (input())
+
+area =(base*altura)/2
+print ('El area del triángulo es: ', area)
